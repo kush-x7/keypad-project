@@ -1,0 +1,24 @@
+:root {
+  /* COLORS */
+
+  --page-bg-color: #e6e6e6;
+  --display-bg-color: #ffffff;
+
+  --button-container-bg: #d2cdcd;
+  --button-primary: #e5e4e1;
+  --button-shadow: #a79e91;
+  --button-replay: #378187;
+  --button-clear: #c85402;
+  --button-text: #36362c;
+  --button-active: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}

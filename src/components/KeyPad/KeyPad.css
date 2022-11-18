@@ -1,0 +1,12 @@
+.keypad {
+  background-color: var(--button-container-bg);
+  min-width: 45rem;
+  min-height: 32.4rem;
+  padding: 3.2rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
+}
