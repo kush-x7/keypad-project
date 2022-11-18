@@ -4,9 +4,16 @@ type ButtonProps = {
   text: string | number;
 };
 
-// Approach 2
 const Button = ({ text }: ButtonProps) => {
-  return <button className={`btn`}>{text}</button>;
+  return (
+    <button
+      className={`btn ${text === "R" ? "btn-r" : ""} ${
+        text === "C" ? "btn-c" : ""
+      }`}
+    >
+      {text}
+    </button>
+  );
 };
 
 export default Button;
@@ -16,3 +23,6 @@ export default Button;
 
 // Approach 1 to set the object type.
 // const Button: React.FunctionComponent<ButtonProps> = ({ text }) => {
+
+// Approach 2
+// const Button = ({ text }: ButtonProps) => {

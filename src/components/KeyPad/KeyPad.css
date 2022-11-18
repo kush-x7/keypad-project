@@ -3,6 +3,7 @@
   min-width: 45rem;
   min-height: 32.4rem;
   padding: 3.2rem;
+  border-radius: 1rem;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);

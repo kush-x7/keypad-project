@@ -1,16 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap");
+
 :root {
   /* COLORS */
 
   --page-bg-color: #e6e6e6;
   --display-bg-color: #ffffff;
 
-  --button-container-bg: #d2cdcd;
-  --button-primary: #e5e4e1;
-  --button-shadow: #a79e91;
-  --button-replay: #378187;
-  --button-clear: #c85402;
   --button-text: #36362c;
+  --button-text--white: #ffffff;
+  --button-clear: #c85402;
+  --button-replay: #378187;
+  --button-shadow: #a79e91;
   --button-active: #ffffff;
+  --button-primary: #e5e4e1;
+  --button-container-bg: #d2cdcd;
+  --button-shadow--clear: #873901;
+  --button-shadow--replay: #1b6066;
+  --button-clear--activeClass: #ff8a38;
+  --button-replay--activeClass: #62b5bc;
 }
 
 * {
@@ -21,4 +28,8 @@
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
 }
