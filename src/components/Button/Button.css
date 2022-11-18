@@ -16,7 +16,7 @@
   position: relative;
 }
 
-.btn:hover {
+.btn:enabled:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 10px 20px var(--button-shadow);
 }
@@ -27,7 +27,7 @@
   background-color: var(--button-active);
 }
 
-.btn::after {
+.btn:enabled::after {
   content: "";
   display: inline-block;
   background-color: var(--button-primary);
@@ -41,7 +41,7 @@
   transition: all 0.3s;
 }
 
-.btn:hover::after {
+.btn:enabled:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
@@ -50,13 +50,15 @@
   background-color: var(--button-replay);
   box-shadow: 0px 4px 0px var(--button-shadow--replay);
   color: var(--button-text--white);
+  cursor: not-allowed;
 }
-.btn-r:active {
+
+.btn-r:enabled:active {
   background-color: var(--button-replay--activeClass);
   box-shadow: 0 5px 10px var(--button-shadow--replay);
 }
 
-.btn-r::after {
+.btn-r:enabled::after {
   content: "";
   display: inline-block;
   height: 100%;
@@ -74,13 +76,15 @@
   background-color: var(--button-clear);
   box-shadow: 0px 4px 0px var(--button-shadow--clear);
   color: var(--button-text--white);
+  cursor: not-allowed;
 }
-.btn-c:active {
+
+.btn-c:enabled {
   background-color: var(--button-clear--activeClass);
   box-shadow: 0 5px 10px var(--button-shadow--clear);
 }
 
-.btn-c::after {
+.btn-c:enabled::after {
   content: "";
   display: inline-block;
   height: 100%;

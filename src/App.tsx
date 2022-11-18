@@ -1,10 +1,10 @@
 import "./App.css";
-import KeyPad from "./components/KeyPad/KeyPad";
+import Dialer from "./components/Dialer/Dialer";
 
 const App = () => {
   return (
     <main className="main">
-      <KeyPad />
+      <Dialer />
     </main>
   );
 };

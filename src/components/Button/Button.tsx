@@ -2,11 +2,14 @@ import "./Button.css";
 
 type ButtonProps = {
   text: string | number;
+  handleOnClick: (e: React.MouseEvent<HTMLElement>) => void;
 };
 
-const Button = ({ text }: ButtonProps) => {
+const Button = ({ text, handleOnClick }: ButtonProps) => {
   return (
     <button
+      disabled={text === "R" || text == "C"}
+      onClick={handleOnClick}
       className={`btn ${text === "R" ? "btn-r" : ""} ${
         text === "C" ? "btn-c" : ""
       }`}
