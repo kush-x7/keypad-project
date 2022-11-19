@@ -1,13 +1,24 @@
+import React, { useState } from "react";
 import "./Display.css";
 
 type displayState = {
-  displayValue: number | string;
-  setDisplayValue: (newDisplayValue: number | number) => void;
+  displayValue: string;
+  setDisplayValue: (newDisplayValue: string) => void;
 };
 
-const handleChange = () => {};
-
 const Display = ({ displayValue, setDisplayValue }: displayState) => {
-  return <input id="display" value={displayValue} onChange={handleChange} />;
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.value.match(/^[0-9]*$/)) {
+      setDisplayValue(e.target.value);
+    }
+  };
+  return (
+    <input
+      type="text"
+      id="display"
+      value={displayValue}
+      onChange={handleChange}
+    />
+  );
 };
 export default Display;

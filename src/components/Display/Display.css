@@ -9,6 +9,14 @@
 
   font-size: 3.5rem;
   font-weight: 600;
+  color: var(--display-text);
   text-align: right;
   background-color: var(--display-bg-color);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }

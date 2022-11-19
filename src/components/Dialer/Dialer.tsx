@@ -3,7 +3,7 @@ import Display from "../Display/Display";
 import KeyPad from "../KeyPad/KeyPad";
 
 const Dialer = () => {
-  const [displayValue, setDisplayValue] = useState<number | string>("");
+  const [displayValue, setDisplayValue] = useState<string>("");
 
   return (
     <div className="dialer">

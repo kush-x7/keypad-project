@@ -1,15 +1,15 @@
 import "./Button.css";
 
 type ButtonProps = {
-  text: string | number;
+  text: string;
   handleOnClick: (e: React.MouseEvent<HTMLElement>) => void;
 };
 
 const Button = ({ text, handleOnClick }: ButtonProps) => {
   return (
     <button
-      disabled={text === "R" || text == "C"}
       onClick={handleOnClick}
+      // disabled={text === "R" || text === "C"}
       className={`btn ${text === "R" ? "btn-r" : ""} ${
         text === "C" ? "btn-c" : ""
       }`}
